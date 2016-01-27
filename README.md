@@ -38,7 +38,7 @@ assert.deepStrictEqual(
   { name: 'Mary Smith' })
 ```
 
-A peoplestring can also contain an e-mail address in angle brackets.
+A peoplestring can contain an e-mail address in angle brackets.
 
 ```javascript
 assert.deepStrictEqual(
@@ -47,7 +47,7 @@ assert.deepStrictEqual(
     email: 'mary@smith.com' })
 ```
 
-A peoplestring can also contain a URL in parentheses.
+A peoplestring can contain a URL in parentheses.
 
 ```javascript
 assert.deepStrictEqual(
@@ -56,7 +56,7 @@ assert.deepStrictEqual(
     url: 'https://marysmith.com' })
 ```
 
-A peoplestring can a name, an e-mail address, as well as a URL.
+A peoplestring can contain a name, an e-mail address, and a URL.
 
 ```javascript
 assert.deepStrictEqual(
@@ -81,4 +81,3 @@ assert.deepStrictEqual(
   parse('(https://marysmith.com)'),
   { url: 'https://marysmith.com' })
 ```
-
