@@ -56,6 +56,16 @@ assert.deepStrictEqual(
     url: 'https://marysmith.com' })
 ```
 
+A peoplestring can contain the name of another person or company to show
+a person's contribution is work for someone else.
+
+```javascript
+assert.deepStrictEqual(
+  parse('Mary Smith [SuperCo, Inc.]'),
+  { name: 'Mary Smith',
+    for: 'SuperCo, Inc.' })
+```
+
 A peoplestring can contain a name, an e-mail address, and a URL.
 
 ```javascript
@@ -80,6 +90,15 @@ A peoplestring can contain just a URL in parentheses.
 assert.deepStrictEqual(
   parse('(https://marysmith.com)'),
   { url: 'https://marysmith.com' })
+```
+
+A peoplestring can contain just the name of someone the person is
+working for:
+
+```javascript
+assert.deepStrictEqual(
+  parse('[SuperCo, Inc.]'),
+  { for: 'SuperCo, Inc.' })
 ```
 
 The function throws when passed a non-string arguments.
