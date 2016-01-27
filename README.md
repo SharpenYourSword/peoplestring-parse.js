@@ -57,7 +57,7 @@ assert.deepStrictEqual(
 ```
 
 A peoplestring can contain the name of another person or company to show
-a person's contribution is work for someone else.
+a person's contribution is a [work made for hire][WMFH] for someone else.
 
 ```javascript
 assert.deepStrictEqual(
@@ -98,8 +98,8 @@ assert.deepStrictEqual(
   { url: 'https://marysmith.com' })
 ```
 
-A peoplestring can contain just the name of someone the person is
-working for:
+A peoplestring can contain just the name of the [work make for hire
+owner][WMFH].
 
 ```javascript
 assert.deepStrictEqual(
@@ -114,3 +114,5 @@ assert.throws(
   function () {
     parse({ a: 1 }) })
 ```
+
+[WMFH]: http://worksmadeforhire.com/
