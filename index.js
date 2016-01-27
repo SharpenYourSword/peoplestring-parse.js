@@ -1,9 +1,10 @@
 module.exports = parsePerson
 
 var components = {
-  name: /^([^\(<]+)/,
-  url: /\(([^\)]+)\)/,
-  email: /<([^>]+)>/ }
+  name:  /^([^\(<[]+)/,
+  url:   /\(([^)]+)\)/,
+  email: /<([^>]+)>/,
+  for:   /\[([^\]]+)\]/ }
 
 function parsePerson(string) {
   if (typeof string !== 'string') {
