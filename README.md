@@ -74,6 +74,12 @@ assert.deepStrictEqual(
   { name: 'Mary Smith',
     email: 'mary@smith.com',
     url: 'https://marysmith.com' })
+
+assert.deepStrictEqual(
+  parse('Mary Smith (https://marysmith.com) <mary@smith.com>'),
+  { name: 'Mary Smith',
+    email: 'mary@smith.com',
+    url: 'https://marysmith.com' })
 ```
 
 A peoplestring can contain just an e-mail address in angle brackets.
