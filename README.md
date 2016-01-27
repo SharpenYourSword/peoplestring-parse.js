@@ -81,3 +81,11 @@ assert.deepStrictEqual(
   parse('(https://marysmith.com)'),
   { url: 'https://marysmith.com' })
 ```
+
+The function throws when passed a non-string arguments.
+
+```javascript
+assert.throws(
+  function () {
+    parse({ a: 1 }) })
+```
