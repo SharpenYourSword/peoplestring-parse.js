@@ -4,7 +4,7 @@ The package exports a single function.
 var parse = require('peoplestring-parse')
 ```
 The function takes a single string argument (a "peoplestring") and
-returns an `Object` with `name`, `email`, `url`, and `for`, properties
+returns an `Object` with `name`, `email`, `url`, and `for` properties
 for each piece of people information appearing in the string.
 
 The following examples are also the test suite for the package. They use
