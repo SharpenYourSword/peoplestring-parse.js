@@ -82,6 +82,22 @@ assert.deepStrictEqual(
     url: 'https://marysmith.com' })
 ```
 
+A peoplestring can contain a name, an e-mail address, a URL, a [work
+made for hire owner][WMFH].
+
+```javascript
+assert.deepStrictEqual(
+  parse(
+    'Mary Smith' +
+    ' <mary@smith.com>' +
+    ' (https://marysmith.com)' +
+    ' [SomeCo, Inc.]'),
+  { name: 'Mary Smith',
+    email: 'mary@smith.com',
+    url: 'https://marysmith.com',
+    for: 'SomeCo, Inc.' })
+```
+
 A peoplestring can contain just an e-mail address in angle brackets.
 
 ```javascript
