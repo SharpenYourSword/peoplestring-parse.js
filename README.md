@@ -98,7 +98,7 @@ assert.deepStrictEqual(
   { url: 'https://marysmith.com' })
 ```
 
-A peoplestring can contain just the name of the [work make for hire
+A peoplestring can contain just the name of the [work made for hire
 owner][WMFH].
 
 ```javascript
